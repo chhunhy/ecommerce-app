@@ -66,24 +66,24 @@ class _DrawerMenuState extends State<DrawerMenu> {
                           ),
                           title: const TextBuilder(text: "Cart", fontSize: 20.0, fontWeight: FontWeight.w600, color: Colors.black),
                         ),
-                        ListTile(
-                          onTap: () {
-                            UrlLaunch.launchInBrowser(urlString: RawString.gitHubRepo);
-                          },
-                          leading: const Icon(Icons.source, color: Colors.black, size: 20),
-                          title: const TextBuilder(text: "Source code", fontSize: 20.0, fontWeight: FontWeight.w600, color: Colors.black),
-                        ),
-                        ListTile(
-                          onTap: () {
-                            UrlLaunch.makeEmail(email: RawString.gitHubRepo, body: 'Hello,', subject: 'Can we Talk?');
-                          },
-                          leading: const Icon(
-                            Icons.email,
-                            color: Colors.black,
-                            size: 20,
-                          ),
-                          title: const TextBuilder(text: "Contact", fontSize: 20.0, fontWeight: FontWeight.w600, color: Colors.black),
-                        ),
+                        // ListTile(
+                        //   onTap: () {
+                        //     UrlLaunch.launchInBrowser(urlString: RawString.gitHubRepo);
+                        //   },
+                        //   leading: const Icon(Icons.source, color: Colors.black, size: 20),
+                        //   title: const TextBuilder(text: "Source code", fontSize: 20.0, fontWeight: FontWeight.w600, color: Colors.black),
+                        // ),
+                        // ListTile(
+                        //   onTap: () {
+                        //     UrlLaunch.makeEmail(email: RawString.gitHubRepo, body: 'Hello,', subject: 'Can we Talk?');
+                        //   },
+                        //   leading: const Icon(
+                        //     Icons.email,
+                        //     color: Colors.black,
+                        //     size: 20,
+                        //   ),
+                        //   title: const TextBuilder(text: "Contact", fontSize: 20.0, fontWeight: FontWeight.w600, color: Colors.black),
+                        // ),
                         InkWell(
                           onTap: () {
                             Navigator.pop(context);
